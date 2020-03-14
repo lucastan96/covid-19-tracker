@@ -1,0 +1,59 @@
+body {
+    background: black;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+.heading {
+    margin-top: 35px;
+}
+
+h1 {
+    color: #FFAC41;
+}
+
+#last-updated {
+    float: right;
+}
+
+.input-group-text {
+    background: #323232;
+    border-color: #323232;
+    color: white;
+}
+
+.card {
+    margin-bottom: 30px;
+    color: black;
+}
+
+.card-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#deaths, #deaths-today {
+    color: #FF1E56;
+}
+
+#recovered {
+    color: #75DAAD;
+}
+
+#critical {
+    color: #FFAC41;
+}
+
+footer {
+    float: right;
+    text-align: right;
+}
+
+@media (max-width: 991px) {
+    .heading {
+        margin-top: 15px;
+    }
+    .card-text {
+        font-size: 40px;
+    }
+}
