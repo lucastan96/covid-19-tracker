@@ -34,7 +34,7 @@ function getData() {
             $("#select-country").val(selectedCountryId);
             lastRetrievedData = data;
             showCountry();
-            $("#last-updated").text("Updated: " + new Date().toLocaleString());
+            $("#last-updated span").text("Updated: " + new Date().toLocaleString());
         })
         .fail(function (xhr, statusText, error) {
 

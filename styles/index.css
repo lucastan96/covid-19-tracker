@@ -8,22 +8,46 @@ body {
     margin-top: 35px;
 }
 
-h1 {
+h1, a, a:hover, .btn, .btn:hover, i {
     color: #FFAC41;
 }
 
 #last-updated {
+    margin-top: 8px;
     float: right;
 }
 
+#last-updated i {
+    vertical-align: bottom;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 .input-group-text {
-    background: #323232;
-    border-color: #323232;
-    color: white;
+    background: #FFAC41;
+    border-color: #FFAC41;
+    color: black;
+}
+
+#select-country, select option {
+    color: black;
+}
+
+.row {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 40px;
+}
+
+.col-lg-4 {
+    padding: 0;
 }
 
 .card {
-    margin-bottom: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 20px;
     color: black;
 }
 
@@ -47,11 +71,20 @@ h1 {
 footer {
     float: right;
     text-align: right;
+    margin-bottom: 25px;
 }
 
 @media (max-width: 991px) {
     .heading {
         margin-top: 15px;
+    }
+    #last-updated {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .row {
+        margin-top: 20px;
     }
     .card-text {
         font-size: 40px;

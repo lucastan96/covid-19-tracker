@@ -8,33 +8,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row heading">
-            <div class="col-6">
+            <div class="col-lg-6">
                 <h1>COVID-19 Tracker</h1>
             </div>
-            <div class="col-6">
-                <small class="mt-2" id="last-updated"></small>
+            <div class="col-lg-6">
+                <small id="last-updated">
+                    <span>Loading...</span>
+                    <i class="material-icons md-24" onclick="getData()" title="Get latest data">refresh</i>
+                </small>
             </div>
         </div>
-        <h5>Countries in dropdown are sorted by number of accumulative Coronavirus cases.</h5>
-        <div class="input-group mt-5 mb-2">
+        <div class="input-group mt-1 mb-2">
             <div class="input-group-prepend">
-                <label class="input-group-text" for="select-country">Country</label>
+                <label class="input-group-text" for="select-country">Selected Country</label>
             </div>
             <select class="custom-select" id="select-country" onchange="showCountry()">
                 <option selected>Loading...</option>
             </select>
         </div>
+        <small class="mr-2">Quick shortcuts:</small>
         <button class="btn btn-link" onclick="showCountry('ireland')">Ireland</button>
         <button class="btn btn-link" onclick="showCountry('uk')">UK</button>
         <button class="btn btn-link" onclick="showCountry('malaysia')">Malaysia</button>
         <button class="btn btn-link" onclick="showCountry('singapore')">Singapore</button>
-        <div class="row mt-5 mb-2">
+        <div class="row mb-2">
             <div class="col-lg-4 col-6">
                 <div class="card">
                     <div class="card-body">
