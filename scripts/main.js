@@ -1,5 +1,6 @@
 let lastRetrievedData;
-let interval = 60 * 1000;
+let interval;
+let intervalTime = 60 * 1000;
 let selectedCountryId;
 let ireland, uk, malaysia, singapore;
 
@@ -66,9 +67,19 @@ function showCountry(selectedCountry) {
     $("#critical").text(lastRetrievedData[id].critical.toLocaleString());
 }
 
+function setupInterval() {
+    interval = setInterval(function () {
+        getData();
+    }, intervalTime);
+}
+
+function refresh() {
+    clearInterval(interval);
+    getData();
+    setupInterval();
+}
+
 $(document).ready(function () {
     getData();
-    setInterval(function () {
-        getData();
-    }, interval);
+    setupInterval();
 });
