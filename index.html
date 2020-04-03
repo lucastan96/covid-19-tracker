@@ -25,21 +25,21 @@
                 </small>
             </div>
         </div>
-        <div class="input-group mt-1 mb-4">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="select-country">Selected Country</label>
-            </div>
-            <select class="custom-select" id="select-country" onchange="showCountry()">
-                <option selected>Loading...</option>
-            </select>
-        </div>
-        <div id="shortcuts-container">
+        <div class="mb-4" id="shortcuts-container">
             <small>Quick shortcuts:</small><br>
             <button class="btn btn-link" onclick="showCountry('ireland')">Ireland</button>
             <button class="btn btn-link" onclick="showCountry('uk')">UK</button>
             <button class="btn btn-link" onclick="showCountry('malaysia')">Malaysia</button>
             <button class="btn btn-link" onclick="showCountry('singapore')">Singapore</button>
             <button class="btn btn-link" onclick="showCountry('australia')">Australia</button>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="select-country">Selected Country</label>
+            </div>
+            <select class="custom-select" id="select-country" onchange="showCountry()">
+                <option selected>Loading...</option>
+            </select>
         </div>
         <div class="row mb-2">
             <div class="col-lg-4 col-6">
