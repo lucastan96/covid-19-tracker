@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: #131313;
     font-family: 'Cabin', sans-serif;
     color: white;
 }
@@ -9,7 +9,7 @@ body {
 }
 
 h1, a, a:hover, .btn, .btn:hover, i {
-    color: #FFAC41;
+    color: rgb(163, 180, 255);
 }
 
 #last-updated {
@@ -25,13 +25,22 @@ h1, a, a:hover, .btn, .btn:hover, i {
 }
 
 .input-group-text {
-    background: #FFAC41;
-    border-color: #FFAC41;
-    color: black;
+    background: rgb(163, 180, 255);
+    border-color: rgb(163, 180, 255);
+    color: #131313;
 }
 
 #select-country, select option {
-    color: black;
+    color: #131313;
+}
+
+#shortcuts-container {
+    text-align: center;
+}
+
+.btn-link:not(5) {
+    padding-left: 0;
+    padding-right: 20px;
 }
 
 .row {
@@ -48,11 +57,19 @@ h1, a, a:hover, .btn, .btn:hover, i {
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 20px;
-    color: black;
+    color: #131313;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-title {
+    margin-bottom: 0;
 }
 
 .card-text {
     font-size: 50px;
+    line-height: 55px;
     font-weight: bold;
 }
 
@@ -61,7 +78,7 @@ h1, a, a:hover, .btn, .btn:hover, i {
 }
 
 #recovered {
-    color: #75DAAD;
+    color: #02ee91;
 }
 
 #critical {
@@ -78,6 +95,9 @@ footer {
     .heading {
         margin-top: 15px;
     }
+    h1 {
+        font-size: 28px;
+    }
     #last-updated {
         float: left;
         margin-top: 0;
@@ -86,7 +106,14 @@ footer {
     .row {
         margin-top: 20px;
     }
+    .card-body {
+        padding: 10px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
     .card-text {
-        font-size: 40px;
+        font-size: 25px;
+        line-height: 25px;
     }
 }

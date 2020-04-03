@@ -2,7 +2,7 @@ let lastRetrievedData;
 let interval;
 let intervalTime = 60 * 1000;
 let selectedCountryId;
-let ireland, uk, malaysia, singapore;
+let ireland, uk, malaysia, singapore, australia;
 
 function getData() {
     $.get({
@@ -10,6 +10,7 @@ function getData() {
         cache: false
     })
         .done(function (data, statusText, xhr) {
+            console.log(data);
             if (lastRetrievedData) {
                 selectedCountryId = $("#select-country").val();
             }
@@ -27,6 +28,8 @@ function getData() {
                     malaysia = i;
                 } else if (data[i].country == "Singapore") {
                     singapore = i;
+                } else if (data[i].country == "Australia") {
+                    australia = i;
                 }
                 if (!lastRetrievedData) {
                     selectedCountryId = ireland;
@@ -53,6 +56,8 @@ function showCountry(selectedCountry) {
             id = malaysia;
         } else if (selectedCountry == "singapore") {
             id = singapore;
+        } else if (selectedCountry == "australia") {
+            id = australia;
         }
     } else {
         id = $("#select-country").val();
