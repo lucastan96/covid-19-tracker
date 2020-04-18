@@ -22,7 +22,7 @@ class API extends REST
 
     private function getData()
     {
-        $url = 'https://corona.lmao.ninja/countries';
+        $url = 'https://corona.lmao.ninja/v2/countries';
         $request = curl_init($url);
         curl_setopt($request, CURLOPT_HTTPHEADER, array('c'));
         curl_setopt($request, CURLOPT_RETURNTRANSFER, true);

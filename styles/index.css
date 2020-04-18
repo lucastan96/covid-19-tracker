@@ -117,3 +117,14 @@ footer {
         line-height: 25px;
     }
 }
+
+@media (min-width: 991px) {
+    body {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        padding: 0;
+    }
+}
