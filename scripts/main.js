@@ -68,6 +68,7 @@ function showCountry(selectedCountry) {
     $("#cases-today").text(lastRetrievedData[id].todayCases.toLocaleString());
     $("#deaths").text(lastRetrievedData[id].deaths.toLocaleString());
     $("#deaths-today").text(lastRetrievedData[id].todayDeaths.toLocaleString());
+    $("#active").text(lastRetrievedData[id].active.toLocaleString());
     $("#recovered").text(lastRetrievedData[id].recovered.toLocaleString());
     $("#critical").text(lastRetrievedData[id].critical.toLocaleString());
 }
